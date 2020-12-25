@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.face {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url("logo_no_eyes.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyes {
+    position: relative;
+    top: 0px;
+    left: 75px;
+    display: flex;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background:transparent;
+    margin: 0 0px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background: #333;
+    border-radius: 50%;
+}
